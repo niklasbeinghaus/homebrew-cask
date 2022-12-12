@@ -1,18 +1,14 @@
 class Tgenv < Formula
   desc "Terragrunt version manager inspired by tfenv"
-  homepage "https://github.com/cunymatthieu/tgenv"
-  url "https://github.com/cunymatthieu/tgenv/archive/v0.0.3.tar.gz"
-  sha256 "e59c4cc9dfccb7d52b9ff714b726ceee694cfa389474cbe01a65c5f9bc13eca4"
+  homepage "https://github.com/taosmountain/tgenv"
+  url "https://github.com/taosmountain/tgenv/archive/refs/tags/0.1.0.tar.gz"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "MIT"
-  head "https://github.com/cunymatthieu/tgenv.git", branch: "master"
+  head "https://github.com/taosmountain/tgenv", branch: "main"
 
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, all: "ceef88ef9082c454a7f9cb0b6833b0a1b3df5147d46cb658a485659ecc081c60"
   end
 
   uses_from_macos "unzip"
